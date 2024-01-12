@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.1;net461;net5.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <IsPackable>true</IsPackable>
   </PropertyGroup>
 
@@ -9,6 +9,11 @@
     <PackageIcon>favicon.png</PackageIcon>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="C:\Users\Profit77\.nuget\packages\deorcify\1.0.2\contentFiles\cs\any\Deorcify\Initializer.cs" />
+    <Compile Remove="C:\Users\Profit77\.nuget\packages\deorcify\1.0.2\contentFiles\cs\any\Deorcify\Initializer.Utils.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Include="../favicon.png" Pack="true" PackagePath="" Visible="false" />

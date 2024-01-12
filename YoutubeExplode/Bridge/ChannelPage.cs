@@ -26,6 +26,11 @@ internal partial class ChannelPage(IHtmlDocument content)
 
 internal partial class ChannelPage
 {
+    [System.Diagnostics.CodeAnalysis.SuppressMessage(
+        "Wrong Usage",
+        "DF0010:Marks undisposed local variables.",
+        Justification = "<Pending>"
+    )]
     public static ChannelPage? TryParse(string raw)
     {
         var content = Html.Parse(raw);
